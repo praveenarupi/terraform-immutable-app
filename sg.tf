@@ -39,4 +39,3 @@ resource "aws_security_group" "main" {
     Name = "${var.ENV}-${var.COMPONENT}"
   }
 }
-Footer
