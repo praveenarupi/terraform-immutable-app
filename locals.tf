@@ -7,4 +7,5 @@ locals {
 
   //arn = aws_lb_target_group.tg.*.arn[0]
   arn = var.COMPONENT == "frontend" ? data.terraform_remote_state.infra.outputs.public_tg_arn : aws_lb_target_group.tg.*.arn[0]
+
 }

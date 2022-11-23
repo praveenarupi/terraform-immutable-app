@@ -12,7 +12,7 @@ data "terraform_remote_state" "infra" {
   backend = "s3"
 
   config = {
-    bucket = "terraform-p66"
+    bucket = "terraform-b66"
     key    = "mutable/infra/${var.ENV}/terraform.tfstate"
     region = "us-east-1"
   }
